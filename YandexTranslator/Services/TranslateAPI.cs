@@ -38,7 +38,6 @@ namespace YandexTranslator.Services
             }
         }
 
-
         public dynamic getLanguages()
         {
             using (WebClient web = new WebClient())
@@ -54,10 +53,8 @@ namespace YandexTranslator.Services
                     throw ex;
                 }
 
-                
             }
         }
-
 
 
     }

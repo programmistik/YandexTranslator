@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,14 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using YandexTranslator.Model;
-using YandexTranslator.Services;
 
 namespace YandexTranslator.View
 {
     
     public partial class MainForm : Form, IView
     {
-        public TranslateAPI API { get; set; } = new TranslateAPI();
         string filename = "TanslationList.json";
 
         public event Func<string, string, string, string> TranslateText;
